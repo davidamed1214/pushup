@@ -1,0 +1,11 @@
+body{
+  background: var(--tertiary);
+  max-width: 440px;
+  height: 956px;
+}
+
+#logo{
+  width: 255px;
+  height: 101px;
+  margin-top: 427px;
+}

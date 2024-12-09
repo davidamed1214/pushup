@@ -1,0 +1,150 @@
+body {
+    max-width: 440px;
+    height: 956px;
+    background-color: var(--tertiary);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    position: relative;
+    
+   
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+ 
+}
+
+h1 {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Roboto Condensed";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+h2{
+font-family: "Roboto Condensed";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+letter-spacing: 0.15px;
+margin-top: 20px;
+}
+
+.image-upload {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.upload-box, .preview-image {
+  width: 80px;
+  height: 56px;
+  background:var(--primary);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview-image {
+  background-image: url(../img/img5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background: #FFE100;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333;
+  border-radius: 34px;
+  transition: .4s;
+}
+
+.toggle input:checked + .slider {
+  background-color: #FFE100;
+}
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-primary, .btn-secondary {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.textInput input {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.categories {
+  margin-top: 30px;
+}
+
+.post-settings {
+  margin-top: 30px;
+}
+
+

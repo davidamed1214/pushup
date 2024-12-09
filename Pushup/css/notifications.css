@@ -1,0 +1,86 @@
+.notifications-container {
+    padding: 16px;
+}
+
+.notification-card {
+    background: #231F20;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.notification-left .profile-pic {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-header {
+    margin-bottom: 4px;
+}
+
+.username {
+    color: #FAFFFF;
+    font-family: "Roboto Condensed";
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+.notification-text {
+    color: #FAFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.notification-time {
+    color: #FFF200;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.notification-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.post-thumbnail {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.more-options {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* For notifications without thumbnails */
+.notification-card.no-thumbnail .notification-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* For the PUSHUP system notification */
+.notification-card.system .profile-pic {
+    background: #FFF200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #231F20;
+}

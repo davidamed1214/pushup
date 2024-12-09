@@ -1,0 +1,261 @@
+body{
+    max-width: 440px;
+    height: 956px;
+    background-image: url(../img/home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+  }
+
+ main{
+  margin-top: 20px;
+ }
+  .challenge-card {
+    position: relative;
+    width: 316px;
+    height: 205px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('../img/img1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 28px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(27, 24, 25, 0.77) 52%, #231F20 100%), url(../img/img1.jpg) lightgray 0px -26.918px / 100% 230.931% no-repeat;
+  }
+
+
+
+  
+  .challenge-content {
+    position: absolute;  
+    bottom: 10px;       
+    left: 24px;        
+  }
+  
+  .challenge-content h1 {
+    font-family: "Roboto Condensed";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  
+  .highlight {
+    color: var(--primary);
+  }
+  
+  .take-part-btn {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    background: var(--primary);
+    color: black;
+    border: none;
+    border-radius: 100px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: bold;
+  }
+  
+  .routines h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    color: var(--secondary);
+    font-family: "Roboto Condensed";
+  }
+  
+  .routines-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    gap: 16px;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .routine-card {
+    position: relative;
+    width: 182px;
+    height: 119px;
+    border-radius: 28px;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.06) 0.01%, rgba(13, 12, 12, 0.38) 15%, rgba(35, 31, 32, 0.90) 70%),
+                url('../img/img3.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.30);
+  }
+  
+  .routine-content {
+    position: absolute;
+    bottom: 4px;
+    left: 16px;
+    color: var(--secondary);
+    font-family: "Roboto Condensed";
+  }
+  
+  .routine-content h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  
+  .routine-content p {
+    font-size: 14px;
+    color: var(--primary);
+  }
+
+.bottom-nav {
+    display: flex;
+    width: 380px;
+    height: 93px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 57px;
+    background: var(--PUSHUP-Colors-Style-Grandient-PUSHUP, linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.10) 100%), #231F20);
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  background: var(--primary);
+  border: none;
+  border-radius: 100px;
+  font-weight: 700;
+  color: var(--tertiary);
+}
+
+.challenges-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 0 24px;
+  margin: 0 -24px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.challenge-card {
+  min-width: 316px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  position: relative;
+  height: 205px;
+  border-radius: 28px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(27, 24, 25, 0.77) 52%, #231F20 100%), url(../img/img1.jpg) lightgray 0px -26.918px / 100% 230.931% no-repeat;
+}
+
+.challenges-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.challenges-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: none;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background: #231F20;
+  padding: 24px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-overlay.active {
+  display: block;
+}
+
+.menu-overlay.active .menu-container {
+  transform: translateX(0);
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.menu-header h2 {
+  color: #FFE600;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.close-menu {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #FAFFFF;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.menu-section h3 {
+  color: #FFE600;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+

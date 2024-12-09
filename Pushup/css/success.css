@@ -1,0 +1,40 @@
+body{
+    max-width: 440px;
+    height: 956px;
+    background-image: url(../img/success.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #logo{
+    width: 255px;
+    height: 101px;
+    margin-top: 13px;
+  }
+  
+  .title{
+    margin-top: 365px;
+  }
+
+  .title2{
+    font-family: "Roboto Condensed";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--secondary);
+    margin-top: 38px;
+  }
+
+  .buttons{
+    display: block;
+    text-align: center;
+    margin-top: 229px;
+  }
+  
+  .btn-primary{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
